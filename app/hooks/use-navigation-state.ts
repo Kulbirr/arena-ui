@@ -39,16 +39,12 @@ function threadIdFromPath(pathname: string): string | null {
 
 function viewForPath(pathname: string): string {
   if (pathname === "/") return "home";
-  return "home";
+  return pathname.split("/").filter(Boolean)[0] || "home";
 }
 
 function pathForView(view?: string): string {
-  switch (view) {
-    case "home":
-      return "/";
-    default:
-      return "/";
-  }
+  if (!view || view === "home") return "/";
+  return `/${view}`;
 }
 
 function pathForCommand(command: any): string {
@@ -68,4 +64,3 @@ function routerPath(path: string): string {
   }
   return path;
 }
-

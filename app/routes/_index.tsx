@@ -1,17 +1,20 @@
-import { APP_TITLE } from "@/lib/app-config";
+import { useSearchParams } from "react-router";
+
+import { recentBattles } from "@/components/arena/arena-data";
+import { ArenaApp } from "@/components/arena/ArenaApp";
 
 export function meta() {
   return [
-    { title: APP_TITLE },
-    { name: "description", content: `${APP_TITLE} app canvas` },
+    { title: "ARENA-PROJECT · Live Arena" },
+    { name: "description", content: "Watch the AI fighter arena." },
   ];
 }
 
 export default function HomeRoute() {
-  return (
-    <div className="flex h-full min-h-0 flex-1 items-center justify-center bg-background">
-      {/* TODO: FUSION_GENERATION_APP_PLACEHOLDER replace everything here with the actual app! */}
-      <p className="text-sm text-muted-foreground">Your app here</p>
-    </div>
+  const [searchParams] = useSearchParams();
+  const replayTitle = searchParams.get("replay");
+  const initialBattle = recentBattles.find(
+    (battle) => battle.title === replayTitle,
   );
+  return <ArenaApp initialBattle={initialBattle} />;
 }

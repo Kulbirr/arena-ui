@@ -38,14 +38,14 @@ visual direction — read and preserve them on every subsequent build; do not
 re-derive a new direction. The first UI pass must fill these fields in as
 part of that build, not leave them as an empty template.
 
-- Product mode: `operate` | `read` | `persuade` | `experience`
-- Audience and cadence:
-- Visual world (name + the feeling it creates):
-- Palette family + neutral undertone:
-- Type treatment:
-- Composition:
-- Shape language:
-- Anti-references (defaults this app must not drift toward):
+- Product mode: `experience` / `operate`
+- Audience and cadence: Crypto-native spectators who check live bouts and fighter stats throughout the day.
+- Visual world (name + the feeling it creates): Neon fight terminal — kinetic, high-stakes, and legible at a glance.
+- Palette family + neutral undertone: Citron-lime and hot coral over near-black graphite.
+- Type treatment: Space Grotesk for display and navigation; JetBrains Mono for telemetry and numeric data.
+- Composition: Canvas-first spectator workbench with compact matchup and betting rails.
+- Shape language: Crisp geometry, thin tinted borders, restrained glow on live state.
+- Anti-references (defaults this app must not drift toward): Generic SaaS dashboards, pastel gradients, emoji, oversized hero copy, fake wallet or transaction success.
 
 ## Agent-native is structural, not visual
 

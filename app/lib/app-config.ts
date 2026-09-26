@@ -1,5 +1,5 @@
-const rawAppName = "chat";
-const rawAppTitle = "Chat";
+const rawAppName = "ARENA-PROJECT";
+const rawAppTitle = "ARENA-PROJECT";
 
 const APP_NAME_PLACEHOLDER = "{" + "{APP_NAME}}";
 const APP_TITLE_PLACEHOLDER = "{" + "{APP_TITLE}}";
