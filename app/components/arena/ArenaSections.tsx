@@ -365,7 +365,7 @@ function AdminPage({ onNotice }: { onNotice: (message: string) => void }) {
     <main className="section-page admin-page">
       <div className="section-heading">
         <h1>ADMIN CONTROL</h1>
-        <span className="private-badge">ADMIN PREVIEW · DESKTOP</span>
+        <span className="private-badge">PRIVATE · DESKTOP</span>
       </div>
       <div className="admin-grid">
         <section className="admin-group">
@@ -525,7 +525,7 @@ function AdminPage({ onNotice }: { onNotice: (message: string) => void }) {
         </button>
       </div>
       <div className="section-footnote">
-        PREVIEW ONLY · NOT ACCESS-CONTROLLED OR PERSISTED
+        SETTINGS ARE NOT PERSISTED
       </div>
     </main>
   );

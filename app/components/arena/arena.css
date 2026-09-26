@@ -153,6 +153,15 @@
   border-color: rgba(98, 217, 137, 0.4);
   color: #82e2a0 !important;
 }
+.sign-out-button {
+  padding: 5px 4px;
+  border: 0;
+  background: transparent;
+  color: #969f91 !important;
+  cursor: pointer;
+  font-size: 9px !important;
+}
+.sign-out-button:hover { color: var(--arena-text) !important; }
 .wallet-dot {
   width: 6px;
   height: 6px;

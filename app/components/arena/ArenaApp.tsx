@@ -1,3 +1,4 @@
+import { signOut } from "@agent-native/core/client";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router";
 
@@ -132,6 +133,11 @@ export function ArenaApp({
         </nav>
         <div className="header-actions">
           <span className="preview-flag">SIMULATION</span>
+          {section === "admin" && (
+            <button className="sign-out-button" onClick={() => signOut()}>
+              Sign out
+            </button>
+          )}
           <button
             className={`wallet-button ${walletPreview ? "wallet-connected" : ""}`}
             onClick={() => setWalletPreview((value) => !value)}
